@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 - 页面未找到</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F2F2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 960px;
+            width: 80%;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .text {
+            flex: 1;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            color: #666666;
+            margin-bottom: 40px;
+        }
+
+        .image {
+            flex: 1;
+            text-align: right;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #FF8C00;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #FFA500;
+        }
+
+        .language-selection {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: right;
+        }
+
+        .language-link {
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .current-language {
+            color: #FF8C00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selection">
+            <a href="../404.html" class="language-link">English</a> | <a href="404.html" class="language-link current-language">中文</a>
+        </div>
+        <div class="text">
+            <h1>404 - 页面未找到</h1>
+            <p>哎呀！我的猫把文件给吃了。是时候在主页重新开始了！</p>
+            <a href="/" class="button">返回主页</a>
+        </div>
+        <div class="image">
+            <img src="../cat.jpg" alt="Cat" />
+        </div>
+    </div>
+</body>
+</html>

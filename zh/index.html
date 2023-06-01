@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>域名转移</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F2F2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .container {
+            background-color: #FFFFFF;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333333;
+            margin-bottom: 40px;
+            font-size: 48px;
+            transition: color 0.3s;
+        }
+        
+        p {
+            color: #666666;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        
+        .redirect-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background: linear-gradient(45deg, #FF9D00, #FF4E00);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 24px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .redirect-button:hover {
+            background: linear-gradient(45deg, #FF4E00, #FF9D00);
+            transform: scale(1.05);
+        }
+        
+        .redirect-button:active {
+            transform: translateY(2px);
+        }
+        
+        .footer {
+            background: linear-gradient(45deg, #333333, #000000);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        
+        .language-toggle {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        
+        .language-toggle a {
+            color: #333333;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .language-toggle a:hover {
+            color: #FF9D00;
+        }
+        
+        .language-toggle a.active {
+            color: #FF9D00;
+        }
+        
+        .logo {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .logo img {
+            height: 100px;
+            width: auto;
+        }
+        
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+        
+        /* Disable scrollbar */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+        
+        /* Add hover and click transition effects */
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-toggle">
+            <a href="#" class="active">中文</a> | <a href="../">English</a>
+        </div>
+        
+        <div class="logo">
+            <img src="../logo.png" alt="Logo">
+        </div>
+        
+        <h1>域名转移</h1>
+        <p>我们已将域名从<strong>zigao.xyz</strong>转移到<strong>zigaow.com</strong>。请相应地更新您的书签。</p>
+        <a href="http://zigaow.com" class="redirect-button">前往 zigaow.com</a>
+    </div>
+    
+    <div class="footer">
+        &copy; 2023 Zigao Wang. 版权所有。
+    </div>
+</body>
+</html>
