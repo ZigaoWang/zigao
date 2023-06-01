@@ -1,3 +1,12 @@
+/* style.css */
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #E6F2F8;
@@ -6,7 +15,7 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #FF9D00, #FF4E00);
+  background: linear-gradient(135deg, #ffa20d, #e85100);
   color: white;
   padding: 20px;
   text-align: center;
@@ -14,9 +23,16 @@ header {
 
 h1 {
   margin: 0;
-  color: white;
-  font-size: 32px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.logo-image {
+  height: 30px; /* Adjust the height as needed */
+  width: auto; /* Preserve aspect ratio */
 }
 
 main {
@@ -27,6 +43,11 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.link {
+  color: #FF8C00;
+}
+
+
 .profile-section {
   display: flex;
   align-items: center;
@@ -35,10 +56,8 @@ main {
 
 .profile-photo {
   width: 200px;
-  height: 200px;
   border-radius: 50%;
   margin-right: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-description {
@@ -70,8 +89,76 @@ a:hover {
 }
 
 footer {
-  background: linear-gradient(135deg, #0088FF, #0055FF);
+  background: linear-gradient(135deg, #6dbbff, #003fbc);
   color: white;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-subtitle {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer-info {
+  font-size: 14px;
+}
+
+.footer-info p {
+  margin-bottom: 5px;
+}
+
+.footer-info small {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.project-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.project h3 {
+  font-size: 16px;
   text-align: center;
 }
