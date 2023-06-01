@@ -6,14 +6,17 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #FFD700, #FF8C00);
-  color: #fff;
+  background: linear-gradient(135deg, #FF9D00, #FF4E00);
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
 h1 {
   margin: 0;
+  color: white;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -32,8 +35,10 @@ main {
 
 .profile-photo {
   width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-description {
@@ -65,8 +70,8 @@ a:hover {
 }
 
 footer {
-  background: linear-gradient(135deg, #004E7C, #1E90FF);
-  color: #fff;
+  background: linear-gradient(135deg, #0088FF, #0055FF);
+  color: white;
   padding: 10px;
   text-align: center;
 }
