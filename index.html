@@ -1,112 +1,73 @@
 <!DOCTYPE html>
-<html lang="zh-CN" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Daztab | Browse with Ease</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <meta http-equiv="Cache-Control" content="max-age=2592000, public">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon设置 -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#04a118">
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#04a118">
-    <meta name="msapplication-config" content="favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <script src="cursor/config.js"></script>
-  </head>
-  <body>
-    <!--logo-->
-    <img src="Logo.png"  class="logo" alt="Daztab | Browse with Ease">
-    <!--背景视频和背景图片切换开关-->
-    <label class="switch">
-      <input type="checkbox" id="video-toggle">
-      <span class="slider"></span>
-    </label>
-    <div id="backgroundContainer">
-      <img src="https://bing.shangzhenyang.com/api/1080p" id="backgroundImage" alt="Background Image">
-      <video src="video/video.mp4" id="backgroundVideo" autoplay loop mute></video>
-      <label class="switch">
-        <input id="toggleSwitch" type="checkbox">
-        <span class="slider"></span>
-      </label>      
+<html>
+<head>
+    <title>Zigao's Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="fullscreen-image">
+        <h1 class="welcome-text">Hey! I'm Zigao Wang</h1>
     </div>
-    <script src="video-switch.js"></script>
-    <div class="backgroundBox1">
-      <div class="backgroundBox2">
-        <!-- 显示时间 -->
-        <h1 class="time" title="Time"><span id="time"></span></h1>
-          <script src="time.js"></script>
-        <!-- backgroundFormStyle搜索框 -->
-        <div id="backgroundFormStyle">
-          <form action="https://www.google.com/search?q=" id="searchForm" method="get" name="searchform" target="_blank">
-            <input type="text" name="q" placeholder="搜索" id="searchInput" autocomplete="off"/>
-            <input type="image" src="icon/search.png" alt="Search" title="Search" id="confirmInput"
-            <!-- 按钮 -->
-          </form>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="daztab-logo.png" alt="Logo" class="logo-image">
+        </a>
+        <h1>Welcome to Zigao's Personal Website</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="profile-section">
+                <img src="photo.png" alt="Zigao's Photo" class="profile-photo">
+                <div class="profile-description">
+                    <h2>About Me</h2>
+                    <p>Hello, I am Zigao. I am a passionate front-end developer with expertise in HTML, CSS, and JavaScript. I love creating user-friendly and visually appealing websites.</p>
+                </div>
+            </div>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>UI/UX Design</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <div class="project">
+                <a href="daztab.html">
+                    <div class="icon">
+                        <img src="daztab-logo.png" alt="Daztab Logo" class="project-logo">
+                    </div>
+                    <h3>Daztab</h3>
+                </a>
+            </div>
+
+            <!-- Add more projects as needed -->
+
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: <a class="link" href="mailto:z@zigao.xyz">z@zigao.xyz</a></li>
+                <li>GitHub: <a class="link" href="https://github.com/ZigaoWang">ZigaoWang</a></li>
+                <li>Buy Me a Coffee Donation: <a class="link" href="https://www.buymeacoffee.com/zigao">www.buymeacoffee.com/zigao</a></li>
+            </ul>
         </div>
-        <div class="iconBackBoxAll">
-          <!-- 网站入口 -->
-          <a class="iconBackBox" href="https://ykps.managebac.cn/student/home/">
-            <img src="https://www.managebac.com/wp-content/uploads/2022/04/Logo-ManageBac-Mark.png" alt="ManageBac">
-            <!-- src图片，alt图片无法显示时的内容 -->
-            <div>
-              <p>ManageBac</p>
-            </div>
-          </a>
-          <a class="iconBackBox" href="https://github.com/">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-            <div>
-              <p>GitHub</p>
-            </div>
-          </a>
-          <a class="iconBackBox" href="https://chat.zhile.io/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png" alt="ChatGPT">
-            <div>
-              <p>ChatGPT</p>
-            </div>
-          </a>
-          <a class="iconBackBox" href="https://archive.org/">
-            <img src="https://www.seekpng.com/png/full/573-5731519_logo-internet-archive-logo.png" alt="Internet Archive">
-            <div>
-              <p>Archive</p>
-            </div>
-          </a>
-          <a class="iconBackBox" href="https://go.myykps.cn/?q=students">
-            <img src="https://go.myykps.cn/themes/bamboo/logo.png" alt="YKPS Portal">
-            <div>
-              <p>Portal</p>
-            </div>
-          </a>
-          <a class="iconBackBox" href="https://stackoverflow.com/">
-            <img src="https://assets.stickpng.com/images/629e29a8974c5f2c1ceaa628.png" alt="Stack Overflow">
-            <div>
-              <p>StackOver</p>
-            </div>
-          </a>
-          <a class="iconBackBox" href="https://youtube.com/">
-            <img src="https://img.freepik.com/premium-vector/red-youtube-logo-social-media-logo_197792-1803.jpg?w=2000" alt="YouTube">
-            <div>
-              <p>YouTube</p>
-            </div>
-          </a>
-          <a class="iconBackBox" href="https://powerschool.ykpaoschool.cn/public/">
-            <img src="https://play-lh.googleusercontent.com/FfHxiXf0AEElwpDtQA-xZ0oViPXFvb9bMvDiLfwicGxDB9DHjwRGXfTPfub-vamgQik" alt="PowerSchool">
-            <div>
-              <p>PwSchool</p>
-            </div>
-          </a>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3 class="footer-subtitle">Contact</h3>
+            <a class="link" href="mailto:z@zigao.xyz" target="_blank">Email</a>
+            <a class="link" href="https://github.com/ZigaoWang" target="_blank">GitHub</a>
+            <a class="link" href="https://www.buymeacoffee.com/zigao" target="_blank">Donate</a>
         </div>
-      </div>
-    </div>
-  <p class="about" href="about/index.html" target="_blank" title="Zigao Wang Personal Website">About</p>
-	<h1 class="copyrightOwner">© 2023 <a href="https://zigao.xyz" title="Zigao Wang Personal Website" target="_blank" class="links">Zigao Wang</a></h1>
-	</div>
-  <span id="runtime_span">
-    <script src="runtime.js"></script>
-  </span>
-  </body>
+        <div class="footer-section">
+            <h3 class="footer-subtitle">Copyright Notice</h3>
+            <div>&copy; 2023 Zigao's Personal Website. All rights reserved.</div>
+            <div>For more information, please <a class="link" href="copyright.html" target="_blank">click here</a></div>
+        </div>
+    </footer>
+</body>
 </html>
