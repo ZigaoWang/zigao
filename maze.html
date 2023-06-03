@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Maze Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E6F2F8;
+    }
+    
+    .maze-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .maze-cell {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border: 1px solid #333;
+      display: inline-block;
+    }
+    
+    .player-cell {
+      background-color: #FF8C00;
+    }
+    
+    .entrance-cell {
+      background-color: #00FF00;
+    }
+    
+    .exit-cell {
+      background-color: #FF0000;
+    }
+    
+    .wall-cell {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="maze-container">
+    <h1>Maze Game</h1>
+    <div id="maze"></div>
+  </div>
+  <script>
+    const mazeElement = document.getElementById('maze');
+    const maze = [
+      ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'],
+      ['#', ' ', '#', ' ', '#', ' ', ' ', ' ', '#', '#', ' ', '#', '#', ' ', ' ', '#'],
+      ['#', ' ', '#', ' ', '#', '#', '#', ' ', ' ', ' ', ' ', ' ', '#', ' ', '#', '#'],
+      ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', ' ', ' ', ' ', '#', '#'],
+      ['#', ' ', '#', '#', '#', ' ', '#', '#', '#', '#', ' ', ' ', ' ', '#', '#', '#'],
+      ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#', '#', '#', ' ', ' ', ' ', '#'],
+      ['#', '#', '#', '#', '#', '#', '#', '#', ' ', '#', '#', ' ', '#', '#', '#', '#'],
+      ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#'],
+      ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', ' ', '#'],
+      ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'E', '#'],
+      ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'],
+    ];
+
+    const entrancePosition = { x: 1, y: 1 };
+    const exitPosition = { x: 14, y: 9 };
+    let playerPosition = { x: entrancePosition.x, y: entrancePosition.y };
+
+    function drawMaze() {
+      mazeElement.innerHTML = '';
+      for (let row = 0; row < maze.length; row++) {
+        for (let col = 0; col < maze[row].length; col++) {
+          const cell = document.createElement('div');
+          cell.className = 'maze-cell';
+          if (row === playerPosition.y && col === playerPosition.x) {
+            cell.classList.add('player-cell');
+          } else if (row === entrancePosition.y && col === entrancePosition.x) {
+            cell.classList.add('entrance-cell');
+          } else if (row === exitPosition.y && col === exitPosition.x) {
+            cell.classList.add('exit-cell');
+          } else if (maze[row][col] === '#') {
+            cell.classList.add('wall-cell');
+          }
+          mazeElement.appendChild(cell);
+        }
+        mazeElement.appendChild(document.createElement('br'));
+      }
+    }
+
+    function movePlayer(dx, dy) {
+      const newPosX = playerPosition.x + dx;
+      const newPosY = playerPosition.y + dy;
+
+      if (maze[newPosY][newPosX] !== '#') {
+        playerPosition.x = newPosX;
+        playerPosition.y = newPosY;
+      }
+
+      drawMaze();
+
+      if (playerPosition.x === exitPosition.x && playerPosition.y === exitPosition.y) {
+        alert('Congratulations! You reached the exit!');
+      }
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'ArrowUp') {
+        movePlayer(0, -1);
+      } else if (event.key === 'ArrowDown') {
+        movePlayer(0, 1);
+      } else if (event.key === 'ArrowLeft') {
+        movePlayer(-1, 0);
+      } else if (event.key === 'ArrowRight') {
+        movePlayer(1, 0);
+      }
+    });
+
+    drawMaze();
+  </script>
+</body>
+</html>
