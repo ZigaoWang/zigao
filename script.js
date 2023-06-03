@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     input += event.key.toLowerCase();
     
     if (input === secretCode) {
-      var windowFeatures = "width=400,height=400,left=200,top=200";
+      var windowFeatures = "width=600,height=600,left=200,top=200";
       window.open("secret.html", "_blank", windowFeatures);
     }
   });
