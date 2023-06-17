@@ -134,6 +134,9 @@ footer {
 .content {
   background-color: #F2F2F2;
   padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-logo {
