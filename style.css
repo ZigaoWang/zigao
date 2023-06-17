@@ -120,12 +120,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .welcome-text {
@@ -134,7 +128,6 @@ footer {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  z-index: 1;
 }
 
 .content {
