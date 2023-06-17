@@ -162,38 +162,18 @@ footer {
 }
 
 .project-logo img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
-footer {
-  background-color: #F1F1F1;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
+.project h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
 }
 
-.footer-section {
-  margin-bottom: 10px;
-}
-
-.footer-subtitle {
-  color: #004E7C;
-  margin-bottom: 10px;
-}
-
-.fullscreen-image {
-  background-image: url('background-image.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.welcome-text {
-  color: #fff;
-  font-size: 32px;
+@media screen and (max-width: 500px) {
+  .project {
+    width: 100%;
+  }
 }
