@@ -134,6 +134,7 @@ footer {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
+  z-index: 1;
 }
 
 .content {
