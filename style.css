@@ -135,20 +135,21 @@ footer {
   background-color: #F2F2F2;
   padding: 40px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .project-logo {
+  flex: 0 0 auto;
   width: 150px;
   height: 150px;
-  margin-top: 10px;
+  margin: 10px;
   border-radius: 20%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
