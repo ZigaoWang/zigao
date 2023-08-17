@@ -141,7 +141,7 @@ footer {
   margin-top: 20px;
   display: inline;
   padding: 0.5rem;
-  z-index: 2;
+  z-index: 999;
 }
 
 .content {
