@@ -1,6 +1,6 @@
 # Zigao's Personal Website
 
-Here is the URL for the website: https://zigaow.com
+## URL: https://zigaow.com
 
 [![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fzigaow.com)](https://zigaow.com)
 [![GitHub](https://img.shields.io/github/license/ZigaoWang/zigao)](LICENSE)
