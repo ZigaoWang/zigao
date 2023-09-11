@@ -1,8 +1,8 @@
 # Zigao's Personal Website
 
-## URL: https://zigaow.com
+## URL: https://zigao.wang
 
-[![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fzigaow.com)](https://zigaow.com)
+[![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fzigao.wang)](https://zigao.wang)
 [![GitHub](https://img.shields.io/github/license/ZigaoWang/zigao)](LICENSE)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ZigaoWang/zigao)](https://github.com/ZigaoWang/zigao)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ZigaoWang/zigao)](https://github.com/ZigaoWang/zigao/commits/master)
