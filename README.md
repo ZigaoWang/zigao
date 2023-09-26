@@ -10,7 +10,7 @@
 
 <p><a href="https://www.buymeacoffee.com/zigao"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="zigao" /></a></p><br><br>
 
-This is the repository for Zigao's personal website. It showcases Zigao Wang's skills, projects, and contact information. The website provides an overview of Zigao's expertise in front-end development and serves as a portfolio of his work.
+<br>This is the repository for Zigao's personal website. It showcases Zigao Wang's skills, projects, and contact information. The website provides an overview of Zigao's expertise in front-end development and serves as a portfolio of his work.
 
 ## Contact
 
