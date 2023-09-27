@@ -8,9 +8,9 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/ZigaoWang/zigao)](https://github.com/ZigaoWang/zigao/commits/master)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/w/ZigaoWang/zigao)](https://github.com/ZigaoWang/zigao/commits/master)
 
-<a href="https://www.buymeacoffee.com/zigao" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<p><a href="https://www.buymeacoffee.com/zigao"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="zigao" /></a></p><br><br>
 
-This is the repository for Zigao's personal website. It showcases Zigao Wang's skills, projects, and contact information. The website provides an overview of Zigao's expertise in front-end development and serves as a portfolio of his work.
+<br>This is the repository for Zigao's personal website. It showcases Zigao Wang's skills, projects, and contact information. The website provides an overview of Zigao's expertise in front-end development and serves as a portfolio of his work.
 
 ## Contact
 
