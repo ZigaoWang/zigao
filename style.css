@@ -113,7 +113,7 @@ footer {
 }
 
 .fullscreen-image {
-  background-image: url('https://bing.shangzhenyang.com/api/1080p');
+  background-image: url('https://api.zigao.wang/bing-wallpaper');
   background-size: cover;
   background-position: center;
   height: 100vh;
